@@ -8,7 +8,7 @@
 100.times do |n|
   title = "タイトル#{n}"
   content = "ポエムの内容#{n}"
-  Blog.create!(title: title,
+  Poem.create!(title: title,
                 content: content,
                )
 end
