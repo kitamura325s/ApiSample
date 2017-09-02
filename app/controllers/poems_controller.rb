@@ -1,5 +1,5 @@
 class PoemsController < ApplicationController
-  before_action :set_blog, only: [:show]
+  before_action :set_poem, only: [:show]
   
   def index
     @poems = Poem.all
@@ -11,7 +11,7 @@ class PoemsController < ApplicationController
   end
 
   private
-    def set_blog
+    def set_poem
       @poems = Poem.find(params[:id])
     end
 end
