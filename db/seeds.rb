@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-100.times do |n|
+10.times do |n|
   title = "タイトル#{n}"
   content = "ポエムの内容#{n}"
   Poem.create!(title: title,
